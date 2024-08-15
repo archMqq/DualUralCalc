@@ -1,11 +1,12 @@
 ﻿using DualUralCalc.Models;
+using DualUralCalc.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DualUralCalc.Services
+namespace DualUralCalc
 {
     class Program
     {
@@ -54,7 +55,7 @@ namespace DualUralCalc.Services
             var fileProcessor = new CsvFileSaver();
             fileProcessor.Save(result, resultFilePath);
 
-            Console.WriteLine("Результаты сохранены в файл: " + resultFilePath);        
+            Console.WriteLine("Результаты сохранены в файл: " + resultFilePath);
         }
     }
 }
